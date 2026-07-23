@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Hi, I'm Elia — AI Product</title>
+  <desc id="desc">An animated introduction with Elia's illustrated character waving.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF4F9" />
+      <stop offset="55%" stop-color="#F9D9E9" />
+      <stop offset="100%" stop-color="#EADFFF" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E5589A">
+        <animate attributeName="stop-color" values="#E5589A;#8C6CEB;#E5589A" dur="7s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#8C6CEB">
+        <animate attributeName="stop-color" values="#8C6CEB;#F06AAE;#8C6CEB" dur="7s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#F06AAE">
+        <animate attributeName="stop-color" values="#F06AAE;#FF7B8E;#F06AAE" dur="7s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity=".28" />
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#71375F" opacity=".1" />
+    </pattern>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="characterShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#000000" flood-opacity=".34" />
+    </filter>
+    <clipPath id="frame">
+      <rect width="1200" height="420" rx="30" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="420" fill="url(#bg)" />
+    <rect width="1200" height="420" fill="url(#dots)" />
+
+    <circle cx="1060" cy="56" r="250" fill="url(#glow)">
+      <animate attributeName="cx" values="1060;960;1060" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="56;116;56" dur="8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="70" cy="420" r="180" fill="url(#glow)" opacity=".45">
+      <animate attributeName="cx" values="70;170;70" dur="9s" repeatCount="indefinite" />
+    </circle>
+
+    <path d="M650 330 C760 212 858 210 952 270 S1100 348 1210 180" fill="none" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="12 14" opacity=".55">
+      <animate attributeName="stroke-dashoffset" values="0;-104" dur="4s" repeatCount="indefinite" />
+    </path>
+
+    <rect x="-250" y="0" width="190" height="420" fill="#FFFFFF" opacity=".2" transform="skewX(-15)">
+      <animate attributeName="x" values="-250;1370" dur="7.5s" repeatCount="indefinite" />
+    </rect>
+
+    <g font-family="Inter, Segoe UI, Arial, sans-serif">
+      <text x="72" y="104" fill="#93627F" font-size="15" font-weight="700" letter-spacing="4">HELLO, INTERNET</text>
+      <text x="72" y="178" fill="#46233F" font-size="58" font-weight="780" letter-spacing=".5">I'm Elia.</text>
+      <text x="72" y="224" fill="url(#accent)" font-size="25" font-weight="700" letter-spacing="2.3">AI PRODUCT MANAGER</text>
+      <text x="72" y="270" fill="#76526E" font-size="18">Exploring Agent × Workflow × Connector</text>
+    </g>
+
+    <g transform="translate(72 304)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1">
+      <g>
+        <rect width="106" height="36" rx="18" fill="#FFFFFF" opacity=".55" stroke="#E5589A" stroke-opacity=".4" />
+        <text x="53" y="23" text-anchor="middle" fill="#6D315A">DISCOVER</text>
+      </g>
+      <g transform="translate(118 0)">
+        <rect width="116" height="36" rx="18" fill="#FFFFFF" opacity=".55" stroke="#8C6CEB" stroke-opacity=".4" />
+        <text x="58" y="23" text-anchor="middle" fill="#60487F">PROTOTYPE</text>
+      </g>
+      <g transform="translate(246 0)">
+        <rect width="92" height="36" rx="18" fill="#FFFFFF" opacity=".55" stroke="#F06AAE" stroke-opacity=".4" />
+        <text x="46" y="23" text-anchor="middle" fill="#77365D">LEARN</text>
+      </g>
+      <g transform="translate(350 0)">
+        <rect width="94" height="36" rx="18" fill="#FFFFFF" opacity=".55" stroke="#FF7B8E" stroke-opacity=".4" />
+        <text x="47" y="23" text-anchor="middle" fill="#7A3A57">ITERATE</text>
+      </g>
+    </g>
+
+    <g filter="url(#softGlow)">
+      <circle cx="740" cy="92" r="5" fill="#E5589A">
+        <animate attributeName="r" values="4;8;4" dur="2.8s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="1120" cy="92" r="6" fill="#F472B6">
+        <animate attributeName="opacity" values=".35;1;.35" dur="2.2s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="1084" cy="342" r="5" fill="#8C6CEB">
+        <animate attributeName="r" values="7;4;7" dur="3.4s" repeatCount="indefinite" />
+      </circle>
+    </g>
+
+    <g transform="translate(735 34)" filter="url(#characterShadow)">
+      <ellipse cx="215" cy="346" rx="124" ry="25" fill="#000000" opacity=".18">
+        <animate attributeName="rx" values="112;124;106;120" dur="3.2s" calcMode="discrete" repeatCount="indefinite" />
+      </ellipse>
+      <svg x="0" y="0" width="430" height="350" viewBox="0 0 627 627" overflow="hidden">
+        <g>
+          <image href="./elia-sprite.png" width="1254" height="1254" preserveAspectRatio="none" />
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;-627 0;0 -627;-627 -627;0 0"
+            keyTimes="0;.25;.5;.75;1" dur="3.2s" calcMode="discrete" repeatCount="indefinite" />
+        </g>
+      </svg>
+    </g>
+
+    <g transform="translate(985 40)" font-family="Inter, Segoe UI, Arial, sans-serif">
+      <rect width="112" height="44" rx="22" fill="#FFFFFF" opacity=".92" />
+      <path d="M24 39 L12 58 L38 43" fill="#FFFFFF" opacity=".92" />
+      <text x="56" y="28" text-anchor="middle" fill="#3B2140" font-size="14" font-weight="800" letter-spacing="1.2">HI THERE!</text>
+      <animateTransform attributeName="transform" type="translate"
+        values="985 40;985 34;985 40" dur="2.4s" repeatCount="indefinite" />
+    </g>
+
+    <rect x=".75" y=".75" width="1198.5" height="418.5" rx="29.25" fill="none" stroke="#7B3C68" stroke-opacity=".16" stroke-width="1.5" />
+  </g>
+</svg>
